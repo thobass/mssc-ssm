@@ -49,6 +49,7 @@ public class PaymentServiceImpl implements PaymentService {
         return sm;
     }
 
+    @Deprecated // Not needed
     @Transactional
     @Override
     public StateMachine<PaymentState, PaymentEvent> declineAuth(Long paymentId) {
